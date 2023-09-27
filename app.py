@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 from datetime import datetime
 import psycopg2  # For PostgreSQL database
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 # Database configuration (replace with actual database credentials)
 db_config = {
