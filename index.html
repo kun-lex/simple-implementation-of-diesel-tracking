@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diesel Consumption Tracker</title>
+</head>
+<body>
+    <h1>Diesel Consumption Tracker</h1>
+    
+    <form action="/record_diesel" method="POST">
+        <label for="diesel_level">Enter Diesel Level:</label>
+        <input type="number" step="0.01" name="diesel_level" required>
+        <button type="submit">Record Diesel Level</button>
+    </form>
+
+    <a href="/view_consumption">View Consumption Data</a>
+</body>
+</html>

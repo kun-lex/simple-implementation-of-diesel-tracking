@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Diesel Consumption</title>
+</head>
+<body>
+    <h1>View Diesel Consumption Data</h1>
+
+    <table>
+        <tr>
+            <th>Timestamp</th>
+            <th>Diesel Level</th>
+        </tr>
+        {% for record in data %}
+        <tr>
+            <td>{{ record[0] }}</td> <!-- Assuming record[0] contains the timestamp -->
+            <td>{{ record[1] }}</td> <!-- Assuming record[1] contains the diesel level -->
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/">Back to Home</a>
+</body>
+</html>
